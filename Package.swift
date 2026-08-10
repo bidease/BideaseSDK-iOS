@@ -1,7 +1,6 @@
 // swift-tools-version:5.9
-// GENERATED FILE — do not edit by hand.
-// Source: iosApp/SPM/Package.swift.template in bidease/mobile-sdk
-// Regenerate: iosApp/SPM/make-spm-package.sh
+// GENERATED FILE — do not edit by hand. Edits are overwritten on the next SDK release.
+// Questions: be-sdk@bidease.com
 
 import PackageDescription
 
@@ -18,7 +17,7 @@ let package = Package(
         .library(name: "BideaseSDKTestMode", targets: ["BideaseMobileTestMode"]),
     ],
     dependencies: [
-        // Ranges match what iosApp.xcodeproj resolves against, i.e. what the adapters are built and tested with.
+        // Kept in sync with the version ranges declared by the CocoaPods podspec.
         .package(
             url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
             "12.0.0" ..< "13.1.0"
@@ -32,40 +31,38 @@ let package = Package(
         .binaryTarget(
             name: "BideaseMobileSDK",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseMobileSDK.xcframework.zip",
-            checksum: "4566503e7b05add69af6b554e64c664bf22364aeecf373f4f0ce083942f8fb40"
+            checksum: "1e8428c046411131b899f137c2f7dcd614ad1e4afe7cf066d1409e77a4a879c3"
         ),
         .binaryTarget(
             name: "BideaseCore",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseCore.xcframework.zip",
-            checksum: "8364560f8b40864d2f6c1511f2a479ebbac86166c7de45046b668b28e7be7824"
+            checksum: "0a5a414e5e37dd22c355eb971c4cecf6efd73006eafadb0d6a0d5866c13cf6fa"
         ),
         .binaryTarget(
             name: "BideaseAdapterAdmob",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseAdapterAdmob.xcframework.zip",
-            checksum: "593358be6dbf8db59d822b854dccf7f6df695c934044c5f9405d17c09112ab64"
+            checksum: "c9e1c8a1af056fc67ad471947b757c1eb844376f5f60743abafa26077d5c971a"
         ),
         .binaryTarget(
             name: "BideaseAdapterGAM",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseAdapterGAM.xcframework.zip",
-            checksum: "502a95deb4a1efb83d5f6a3d1c6bfabd837d640ecea2981bce692ab5aafd40ab"
+            checksum: "1411640713d46edd03b650a5b44eae8720b06ba7362e155e55b52b4f002f08eb"
         ),
         .binaryTarget(
             name: "BideaseAdapterAppLovin",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseAdapterAppLovin.xcframework.zip",
-            checksum: "ad6a39b3914d98d1b0de0f248743bc455877acc0760cc673a51adc8d1c8b07c5"
+            checksum: "5f8800f03232466d6406fa10fa89a83feaed552f05645e72e2f5b96f6fbec70b"
         ),
         .binaryTarget(
             name: "BideaseMobileTestMode",
             url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/2.2.8/BideaseMobileTestMode.xcframework.zip",
-            checksum: "c2402f02fa8486b95f42ebf98c990118f893aef5342ade3a4acd4e66a1c1ed42"
+            checksum: "0a7292dba4fd9817b1c795eab29068f7961d305b4e33d84d8be5009bc375ff9f"
         ),
 
         // Wrapper targets exist only because a binaryTarget cannot declare dependencies or carry
         // resources. They ship no API — consumers still `import BideaseMobileSDK` etc.
 
-        // Carries the JS runtime assets (mraid/bidease/bundle/info) that the podspec ships as
-        // `resource_bundles`. SPM renames this to "BideaseSDK_BideaseCoreSupport.bundle";
-        // BundleResources.kt finds it by looking for bidease.js inside the app's bundles.
+        // Carries the JS runtime assets the SDK loads at runtime. Do not remove or rename them.
         .target(
             name: "BideaseCoreSupport",
             dependencies: [

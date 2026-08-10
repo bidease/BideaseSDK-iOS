@@ -1,7 +1,7 @@
 # Bidease Mobile SDK — Swift Package
 
 Swift Package Manager distribution of the Bidease Mobile SDK for iOS.
-This repository is generated: sources of truth live in `iosApp/SPM/` of the SDK repo.
+The contents of this repository are generated on each SDK release — do not send pull requests here.
 
 - **Version:** `2.2.8`
 - **Requires:** iOS 13.0+, Xcode 15+
@@ -15,11 +15,17 @@ In Xcode: **File → Add Package Dependencies…** and enter
 https://github.com/bidease/BideaseSDK-iOS
 ```
 
-Or in a `Package.swift`:
+Or in a `Package.swift`. Note that `package:` is the repository name — SwiftPM identifies a
+dependency by the last component of its URL, not by the name inside its manifest:
 
 ```swift
 dependencies: [
     .package(url: "https://github.com/bidease/BideaseSDK-iOS", from: "2.2.8")
+],
+targets: [
+    .target(name: "YourApp", dependencies: [
+        .product(name: "BideaseSDK", package: "BideaseSDK-iOS"),
+    ])
 ]
 ```
 
