@@ -1,0 +1,27 @@
+Bidease Mobile SDK — Proprietary License
+
+Copyright (c) Bidease. All rights reserved.
+
+This software and its accompanying binary frameworks (the "Software") are the
+proprietary and confidential property of Bidease. The Software is licensed, not
+sold.
+
+Subject to the terms of a separate written agreement with Bidease, you are
+granted a non-exclusive, non-transferable, revocable license to use and
+redistribute the Software solely as an integrated component of your own
+application.
+
+You may not, in whole or in part: modify, adapt or create derivative works of
+the Software; reverse engineer, decompile or disassemble it, except to the
+extent such restriction is prohibited by applicable law; remove or alter any
+proprietary notices; or distribute the Software other than as an integrated
+component of your own application.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL BIDEASE BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Contact: be-sdk@bidease.com
