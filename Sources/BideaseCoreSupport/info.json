@@ -1,5 +1,8 @@
 {
-    "version": "23",
+    "version": "24",
+    "bridge": {
+        "max": 2
+    },
     "minSdkVersion": {
         "android": "2.2.0",
         "ios": "2.2.0"
