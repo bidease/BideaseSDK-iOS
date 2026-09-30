@@ -75,7 +75,7 @@ into your app.
 
 | Dependency | Version range |
 |---|---|
-| [swift-package-manager-google-mobile-ads](https://github.com/googleads/swift-package-manager-google-mobile-ads) | `12.0.0 ..< 13.1.0` |
+| [swift-package-manager-google-mobile-ads](https://github.com/googleads/swift-package-manager-google-mobile-ads) | `12.0.0 ..< 14.0.0` |
 | [AppLovin-MAX-Swift-Package](https://github.com/AppLovin/AppLovin-MAX-Swift-Package) | `13.0.0 ..< 14.0.0` |
 
 ## Migrating from CocoaPods
