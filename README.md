@@ -3,7 +3,7 @@
 Swift Package Manager distribution of the Bidease Mobile SDK for iOS.
 The contents of this repository are generated on each SDK release — do not send pull requests here.
 
-- **Version:** `3.0.0`
+- **Version:** `3.0.1`
 - **Requires:** iOS 13.0+, Xcode 15+
 - Also available via [CocoaPods](https://cocoapods.org/pods/BideaseSDK) (`pod 'BideaseSDK'`).
 
@@ -20,7 +20,7 @@ dependency by the last component of its URL, not by the name inside its manifest
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/bidease/BideaseSDK-iOS", from: "3.0.0")
+    .package(url: "https://github.com/bidease/BideaseSDK-iOS", from: "3.0.1")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
