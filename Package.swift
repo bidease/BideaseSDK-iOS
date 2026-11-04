@@ -30,33 +30,33 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BideaseMobileSDK",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseMobileSDK.xcframework.zip",
-            checksum: "b5779a420183ccc39152b074cb4790b3260e68eaaf694ddf57b216b2801fd096"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseMobileSDK.xcframework.zip",
+            checksum: "7ae914745c83b59c2171df4af65078526e1ee06e62487ab57ff9d388b196fc5c"
         ),
         .binaryTarget(
             name: "BideaseCore",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseCore.xcframework.zip",
-            checksum: "bfdbe3ffcc29b172c21ea45499ee41cc46525eb2478e2124da111ecf8596105a"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseCore.xcframework.zip",
+            checksum: "836ff7eccd648b83c8925e53f940ffd78047267d91d18d6eac44b87612e5b9be"
         ),
         .binaryTarget(
             name: "BideaseAdapterAdmob",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseAdapterAdmob.xcframework.zip",
-            checksum: "a8991da844f5c5da492c44e16aa6e8f216cf0d75b6ba1d9723577caa26d8a0b5"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseAdapterAdmob.xcframework.zip",
+            checksum: "a058c80003e6b4b31a6a6cae3266ffd811941a5108baa22bb51e505ea888710d"
         ),
         .binaryTarget(
             name: "BideaseAdapterGAM",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseAdapterGAM.xcframework.zip",
-            checksum: "864d5f32d9b84ae418282251bf83f2428c8c75f5fd2ee9998c180c0628963aa1"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseAdapterGAM.xcframework.zip",
+            checksum: "a64690d8f472a1a097a9ff5a5be92733e099777826273777289f5c29be2e4925"
         ),
         .binaryTarget(
             name: "BideaseAdapterAppLovin",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseAdapterAppLovin.xcframework.zip",
-            checksum: "088522e688b09e0bb18420c8cb97ce98c2bc009a51c42d8295fcd6ae5a49ac84"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseAdapterAppLovin.xcframework.zip",
+            checksum: "2ff57b28d2082a74848e939c4d4e5efae0f274a197060ad8da959ebaccaa5da1"
         ),
         .binaryTarget(
             name: "BideaseMobileTestMode",
-            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.2/BideaseMobileTestMode.xcframework.zip",
-            checksum: "cc80154a779dbc38ad4b4e15e76708aa0c08916f209a52f6c6e6f04e177f39b4"
+            url: "https://github.com/bidease/BideaseSDK-iOS/releases/download/3.0.3/BideaseMobileTestMode.xcframework.zip",
+            checksum: "a14995623ac54ea118131484cb449e43f079a3ff8e29ab8c33e347b579ce9232"
         ),
 
         // Wrapper targets exist only because a binaryTarget cannot declare dependencies or carry
